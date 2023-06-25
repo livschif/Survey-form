@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <h1 id="title">Vacation Survey Form</h1>
+    <p id="description"><em>Thank you for participating in my survey!</em></p>
+    <form id="survey-form">
+    <fieldset> 
+      <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required></input>  
+    </label>
+      <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required></input>
+    </label>
+      <label for="age" id="number-label">Age <input id="number" type="number" min="13" max="100" placeholder="Age" required></input>
+      </label>
+      <label for="selector">How do you prefer to travel?</label>
+      <select id="dropdown">
+        <option value=" ">(select one)</option>
+        <option value="1">Car</option>
+        <option value="2">Plane</option>
+        <option value="3">Train</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Have you Vacationed in the last year?</label>
+        <label for="yes"><input id="yes" type="radio" name="account-type" value="yes" name="vacation-status-yes" class="inline">Yes</input></label>
+        <label for="no"><input id="yes" type="radio" name="account-type" value="no" name="vacation-status-no" class="inline">No</input></label>
+        <label>Vacation environments I like...(check all that apply)</label>
+        <label><input type="checkbox" value="beach">Beach</input></label>
+        <label><input type="checkbox" value="mountain">Mountains</></label>
+        <label><input type="checkbox" value="dessert">Dessert</label>
+        <label><input type="checkbox" value="snow">Snow</></label>  
+        </fieldset>
+        <fieldset>
+         <label>Other Comments and suggestions?<label> 
+           <textarea></textarea>
+        </fieldset>  
+           <input type="submit" id="submit">
+        </body>
+      </html>
